@@ -1,0 +1,52 @@
+[tool.poetry]
+name = "poisson-blending-in-5lines"
+version = "0.1.0"
+description = "An implementation of Poisson Blending in 5 lines."
+authors = ["Masahiro Wada <argon.argon.argon@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.6.1"
+scipy = "^1.4.1"
+
+[tool.poetry.dev-dependencies]
+jupyter = "^1.0.0"
+scikit-image = "^0.17.2"
+pre-commit = "^2.4.0"
+bandit = "^1.6.2"
+black = "^19.10b0"
+isort = "^4.3.21"
+matplotlib = "^3.2.1"
+jupytext = "^1.4.2"
+
+[tool.black]
+multi_line_output=3
+include_trailing_comma=true
+force_grid_wrap=0
+use_parentheses=true
+line_length=88
+target-version = ['py36']
+include = '\.pyi?$'
+exclude = '''
+
+(
+  /(
+      \.eggs         # exclude a few common directories in the
+    | \.git          # root of the project
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+  )/
+  | foo.py           # also separately exclude a file named foo.py in
+                     # the root of the project
+)
+'''
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
