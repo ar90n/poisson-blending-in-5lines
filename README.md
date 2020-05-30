@@ -35,7 +35,7 @@ $ poetry run jupyter notebook ./notebook/example.ipynb
 ```
 
 ## References
-* [Poisson Blending](http://opencv.jp/opencv2-x-samples/poisson-blending}
+* [Poisson Blending](http://opencv.jp/opencv2-x-samples/poisson-blending)
 * [Erkaman / poisson_blend](https://github.com/Erkaman/poisson_blend)
 * [Poisson Image Editing](https://dl.acm.org/doi/pdf/10.1145/1201775.882269)
 
